@@ -2,7 +2,19 @@
 {-# LANGUAGE BangPatterns #-}
 
 module Statistics.FastBayes.Linear 
-  (Fit, marginalLikelihood)
+  ( Fit
+  , marginalLikelihood
+  , fit1
+  , fit2
+  , design
+  , response
+  , priorPrecision        
+  , noisePrecision        
+  , numEffectiveParameters
+  , logEvidence           
+  , mapWeights            
+  , hessian
+  )
   where
 
 import qualified Data.Vector.Storable as V
