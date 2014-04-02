@@ -92,8 +92,5 @@ x2 = trans $ (100 >< 1000) [1.0 ..]
 
 y = V.fromList [1.0 .. 1000.0]
 
---x = trans $ (200 >< 5000) [1.0 ..]
---y = V.fromList [1.0 .. 5000.0]
-
 fit1 = marginalLikelihood (!! 100) x1 y
 fit2 = marginalLikelihood (!! 100) x2 y
